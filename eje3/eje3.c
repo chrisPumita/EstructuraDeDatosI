@@ -3,7 +3,7 @@
 #define limPromedios 5
 #define limRegistro 5
 #define limEscala 7
-#define Version 5
+#define Version 6
 /*
 TABLA DE CONVERSIÓN. Escriba un programa que en un ciclo lea 5 calificaciones de tipo
 real del teclado, y utilizando una tabla de conversión con la escala de nuestro grupo para
@@ -25,6 +25,7 @@ int main()
         /* COMPARANDO PROMEDIO CON ARREGLO LIM*/
         for (j = 0; j < limEscala-1; j++) {
           if (pro[i] > esc[j] && pro[i] <= esc[j+1]){
+                pos = j;
             switch (pos) {
               case 0:
               reg[i] = 5;
