@@ -17,7 +17,7 @@ int main(void)
 	char cadena2[longChar];
 
 	char cadena3[longChar];
-
+/*COMENTARIO*/
 	printf("Ingrese primera palabra menor a 20 caracteres\n\b");
 	scanf("%s",&cadena1);
 	printf("Ingrese segunda lapabra menor a 20 caracteres\n");
