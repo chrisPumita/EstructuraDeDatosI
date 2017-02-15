@@ -26,7 +26,10 @@ int main(void)
 	strcat(cadena3, " ");
 	strcat(cadena3, cadena2);
 	//strcpy(cadena3, cadena2);
-
+	int n;
+	for (n = 0; n<strlen(cadena3); n++) {
+        cadena3[n]=toupper(cadena3[n]);
+	}
 	printf("Tu frase completa: %s\n",cadena3);
 	return 0;
 }
